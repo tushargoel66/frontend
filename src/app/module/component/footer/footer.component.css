@@ -29,6 +29,28 @@ p {
   animation: animborder 2s linear infinite;
 }
 
+@-webkit-keyframes animborder {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(113px);
+    transform: translateX(113px);
+  }
+}
+
+@keyframes animborder {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(113px);
+    transform: translateX(113px);
+  }
+}
+
 .animate-border.border-white:after {
   border-color: #fff;
 }
@@ -51,6 +73,31 @@ p {
   border-right-color: #f7f9f8;
   border-left-color: #f7f9f8;
 }
+
+* Animated heading border */
+ @keyframes primary-short {
+   0% {
+     width: 15%;
+   }
+   50% {
+     width: 90%;
+   }
+   100% {
+     width: 10%;
+   }
+ }
+
+ @keyframes primary-long {
+   0% {
+     width: 80%;
+   }
+   50% {
+     width: 0%;
+   }
+   100% {
+     width: 80%;
+   }
+ }
 
 .dk-footer {
   padding: 75px 0 0;
