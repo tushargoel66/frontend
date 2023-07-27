@@ -10,6 +10,11 @@ import { HomeComponent } from './module/component/home/home.component';
 import { NavbarComponent } from './module/component/navbar/navbar.component';
 import { DashboardComponent } from './module/component/dashboard/dashboard.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { FooterComponent } from './module/component/footer/footer.component';
+import { NotFoundPageComponent } from './components/not-found-page/not-found-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { LoadingComponent } from './components/loading/loading.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +23,17 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     HomeComponent,
     NavbarComponent,
     DashboardComponent,
+    FooterComponent,
+    NotFoundPageComponent,
+    LoadingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NgbModule
+    NgbModule,
+    FontAwesomeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,68 +1,30 @@
-<div class="area"></div>
-<nav class="main-menu"> 
-  <ul>
-    <li>
-      <a href="https://jbfarrow.com">
-        <i class="fa fa-home fa-2x"></i>
-        <span class="nav-text"> Community Dashboard </span>
-      </a>
-    </li>
-    <li class="has-subnav">
-      <a href="#">
-        <i class="fa fa-globe fa-2x"></i>
-        <span class="nav-text"> Global Surveyors </span>
-      </a>
-    </li>
-    <li class="has-subnav">
-      <a href="#">
-        <i class="fa fa-comments fa-2x"></i>
-        <span class="nav-text"> Group Hub Forums </span>
-      </a>
-    </li>
-    <li class="has-subnav">
-      <a href="#">
-        <i class="fa fa-camera-retro fa-2x"></i>
-        <span class="nav-text"> Survey Photos </span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="fa fa-film fa-2x"></i>
-        <span class="nav-text"> Surveying Tutorials </span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="fa fa-book fa-2x"></i>
-        <span class="nav-text"> Surveying Jobs </span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="fa fa-cogs fa-2x"></i>
-        <span class="nav-text"> Tools & Resources </span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="fa fa-map-marker fa-2x"></i>
-        <span class="nav-text"> Member Map </span>
-      </a>
-    </li>
-    <li>
-      <a href="#">
-        <i class="fa fa-info fa-2x"></i>
-        <span class="nav-text"> Documentation </span>
-      </a>
-    </li>
-  </ul>
-
-  <ul class="logout">
-    <li>
-      <a href="#">
-        <i class="fa fa-power-off fa-2x"></i>
-        <span class="nav-text"> Logout </span>
-      </a>
-    </li>
-  </ul>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+      <a class="navbar-brand" href="#">Admin Header</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+          aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+              <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="./home">Home
+                      <span class="sr-only">(current)</span>
+                  </a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="./about">About</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="./services">Services</a>
+              </li>
+              <li class="nav-item" routerLinkActive="active">
+                  <a class="nav-link" routerLink="./contact">Contact</a>
+              </li>
+              <li class=" btn-primary nav-item text-white" role="button">
+                  <a class="nav-link text-white" (click)="logout()" >logout</a>
+              </li>
+          </ul>
+      </div>
+  </div>
 </nav>
